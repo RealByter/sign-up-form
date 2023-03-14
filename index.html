@@ -5,31 +5,62 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Sign-up Form</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="normalize.css" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
-	<body>
-		<div class="container">
-			<div class="image">
+	<body class="container">
+		<div class="logo">
+			<img src="halie-west-25xggax4bSA-unsplash.jpg" alt />
+			<div class="icon">
 				<img
 					src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
 					alt
-					class="icon"
 				/>
 				<h1 class="title">ODIN</h1>
 			</div>
-			<div class="main">
-				<p>
-					This is not a real online service! You know you need something like
-					this in your life to help you realize your deepest dreams. Sign up
-					<i>now</i> to get started.<br /><br />
-					You <i>know</i> you want to.
-				</p>
-				<form action="/" method="post" class="form">
-					<button class="button">Create Account</button>
-				</form>
-				<p>Already have an account? <a href="/">Log in</a></p>
-			</div>
+		</div>
+		<div class="main">
+			<p>
+				This is not a real online service! You know you need something like this
+				in your life to help you realize your deepest dreams. Sign up
+				<i>now</i> to get started.<br /><br />
+				You <i>know</i> you want to.
+			</p>
+			<form action="/" method="post" class="form">
+				<fieldset class="inputs">
+					<legend>Let's do this!</legend>
+					<div>
+						<label for="first-name">FIRST NAME</label>
+						<input type="text" name="first-name" id="first-name" />
+						<label for="last-name">LAST NAME</label>
+						<input type="text" name="last-name" id="last-name" />
+					</div>
+					<div>
+						<label for="email">EMAIL</label>
+						<input type="email" name="email" id="email" />
+						<label for="phone-number">PHONE NUMBER</label>
+						<input type="number" name="phone-number" id="phone-number" />
+					</div>
+					<div>
+						<label for="password">PASSWORD</label>
+						<input type="password" name="password" id="password" />
+						<label for="confirm-password">CONFIRM PASSWORD</label>
+						<input
+							type="password"
+							name="confirm-password"
+							id="confirm-password"
+						/>
+					</div>
+				</fieldset>
+				<button class="button">Create Account</button>
+			</form>
+			<p>Already have an account? <a href="/">Log in</a></p>
 		</div>
 	</body>
 </html>
