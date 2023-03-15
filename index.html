@@ -11,6 +11,7 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="index.js" defer></script>
 		<link rel="stylesheet" href="normalize.css" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
@@ -37,37 +38,51 @@
 					<legend>Let's do this!</legend>
 					<div>
 						<div class="input">
-              <label for="first-name">FIRST NAME</label>
-              <input type="text" name="first-name" id="first-name" />
-            </div>
+							<label for="first-name">FIRST NAME</label>
+							<input type="text" name="first-name" id="first-name" required />
+						</div>
 						<div class="input">
-              <label for="last-name">LAST NAME</label>
-              <input type="text" name="last-name" id="last-name" />
-            </div>
+							<label for="last-name">LAST NAME</label>
+							<input type="text" name="last-name" id="last-name" required />
+						</div>
 					</div>
 					<div>
 						<div class="input">
-              <label for="email">EMAIL</label>
-              <input type="email" name="email" id="email" />
-            </div>
+							<label for="email">EMAIL</label>
+							<input type="email" name="email" id="email" required />
+						</div>
 						<div class="input">
-              <label for="phone-number">PHONE NUMBER</label>
-              <input type="number" name="phone-number" id="phone-number" />
-            </div>
+							<label for="phone-number">PHONE NUMBER</label>
+							<input
+								type="number"
+								name="phone-number"
+								id="phone-number"
+								required
+							/>
+						</div>
 					</div>
 					<div>
+						<div class="input" style="position: relative">
+							<label for="password">PASSWORD</label>
+							<input
+								type="password"
+								name="password"
+								id="password"
+								required
+								class="invalid"
+							/>
+							<p>* Password do not match</p>
+						</div>
 						<div class="input">
-              <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" />
-            </div>
-						<div class="input">
-              <label for="confirm-password">CONFIRM PASSWORD</label>
-              <input
-                type="password"
-                name="confirm-password"
-                id="confirm-password"
-              />
-            </div>
+							<label for="confirm-password">CONFIRM PASSWORD</label>
+							<input
+								type="password"
+								name="confirm-password"
+								id="confirm-password"
+								required
+								class="invalid"
+							/>
+						</div>
 					</div>
 				</fieldset>
 				<button class="button">Create Account</button>
