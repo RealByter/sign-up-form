@@ -130,6 +130,8 @@ input {
 	border-radius: 5px;
 	padding: 5px 7.5px 4px;
 	color: #232323;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 input:focus {
@@ -144,15 +146,35 @@ input:focus {
 }
 
 #password + p {
-  display: none;
+	display: none;
 }
 
 #password.invalid + p {
-  display: block;
+	display: block;
 	position: absolute;
 	top: 32.5px;
 	left: 0;
 	font-size: 0.8rem;
 	font-weight: 500;
 	color: #ce1919;
+}
+
+.button {
+	background-color: #445633;
+	box-shadow: 2.5px 2.5px 7px rgba(0, 0, 0, 0.4);
+	color: white;
+	padding: 12.5px 45px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 30px 0;
+}
+
+.login {
+	margin: 0;
+}
+
+.login a {
+	color: #445633;
+  text-decoration: none;
 }

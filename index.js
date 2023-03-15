@@ -3,7 +3,7 @@ const confirmPassword = document.getElementById('confirm-password');
 
 const verifyPassword = e => {
 	console.log(e);
-	if (password.value === confirmPassword.value && password.value >= 4) {
+	if (password.value === confirmPassword.value && password.value.length >= 4) {
 		password.classList.remove('invalid');
 		confirmPassword.classList.remove('invalid');
 	} else {
